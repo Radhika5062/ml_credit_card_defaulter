@@ -1,0 +1,10 @@
+xlrd
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+statsmodels
+scikit-learn
+imblearn
+xgboost

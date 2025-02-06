@@ -1,0 +1,72 @@
+AGE:
+  drift_status: false
+  p_value: 0.9957157333526018
+BILL_AMT1:
+  drift_status: false
+  p_value: 0.4902861131215258
+BILL_AMT2:
+  drift_status: false
+  p_value: 0.9589026054836041
+BILL_AMT3:
+  drift_status: false
+  p_value: 0.8239965201065946
+BILL_AMT4:
+  drift_status: false
+  p_value: 0.6076664489583514
+BILL_AMT5:
+  drift_status: false
+  p_value: 0.4724473761647612
+BILL_AMT6:
+  drift_status: false
+  p_value: 0.508432427106711
+EDUCATION:
+  drift_status: false
+  p_value: 0.8365321323658917
+LIMIT_BAL:
+  drift_status: false
+  p_value: 0.3355566330464085
+MARRIAGE:
+  drift_status: false
+  p_value: 0.9927044737697627
+PAY_0:
+  drift_status: false
+  p_value: 0.9999999999999812
+PAY_2:
+  drift_status: false
+  p_value: 0.9999999999998669
+PAY_3:
+  drift_status: false
+  p_value: 0.9714634023660461
+PAY_4:
+  drift_status: false
+  p_value: 0.9999851357199241
+PAY_5:
+  drift_status: false
+  p_value: 0.9433655412803544
+PAY_6:
+  drift_status: false
+  p_value: 0.9811896382438975
+PAY_AMT1:
+  drift_status: false
+  p_value: 0.8197443269212012
+PAY_AMT2:
+  drift_status: false
+  p_value: 0.2974964911329825
+PAY_AMT3:
+  drift_status: false
+  p_value: 0.46803828425735017
+PAY_AMT4:
+  drift_status: false
+  p_value: 0.7382351229510078
+PAY_AMT5:
+  drift_status: false
+  p_value: 0.9646448506729819
+PAY_AMT6:
+  drift_status: false
+  p_value: 0.9503926544848039
+SEX:
+  drift_status: false
+  p_value: 0.9997959699414584
+default payment next month:
+  drift_status: false
+  p_value: 0.13020261591160942

@@ -8,3 +8,10 @@ statsmodels
 scikit-learn
 imblearn
 xgboost
+python-dotenv
+pymongo[srv]
+certifi
+dill
+pyYAML
+scipy
+kneed

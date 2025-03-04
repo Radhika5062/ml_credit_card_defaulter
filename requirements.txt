@@ -15,3 +15,8 @@ dill
 pyYAML
 scipy
 kneed
+fastapi
+uvicorn==0.18.3
+gunicorn
+
+-e .

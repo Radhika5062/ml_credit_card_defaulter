@@ -13,14 +13,14 @@ class CreditModel:
             logging.info(f"Error happened in the init method of the CreditModel class - {e}")
             raise e
     
-    def predit(self, x):
+    def predict(self, x):
         try:
             logging.info(f"Entered the predict method of the CreditModel class")
             x_transform = self.preprocessor.transform(x)
             y_hat = self.model.predict(x_transform)
             return y_hat
         except Exception as e:
-            logging.info(f"Entered the predict method of the CreditModel class - {3}")
+            logging.info(f"Entered the predict method of the CreditModel class - {e}")
             raise e
     
 class ModelResolver:
@@ -36,13 +36,17 @@ class ModelResolver:
         try:
             logging.info(f"Entered the does_model_exists method of the ModelResolver class")
             if not os.path.exists(self.model_dir):
+                logging.info(f"Model dir does not exist - {self.model_dir}")
                 return False
             timestamps = os.listdir(self.model_dir)
+            logging.info(f"Timestamp = {timestamps}")
             if len(timestamps) ==0:
+                logging.info("timestamp length = 0")
                 return False
             latest_model_path = self.get_best_model()
 
             if not os.path.exists(latest_model_path):
+                logging.info(f"latest_model_path does not exist - {latest_model_path}")
                 return False
             
             return True
@@ -56,6 +60,7 @@ class ModelResolver:
             timestamps = list(map(int, os.listdir(self.model_dir)))
             latest_timestamp = max(timestamps)
             latest_model_path = os.path.join(self.model_dir, f"{latest_timestamp}",MODEL_FILE_NAME)
+            logging.info(f"latest_model_path = {latest_model_path}")
             return latest_model_path
         except Exception as e:
             logging.info(f"Error occured in the get_best_model method of the ModelResolver class")

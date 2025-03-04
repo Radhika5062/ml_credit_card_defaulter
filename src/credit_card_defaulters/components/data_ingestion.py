@@ -44,7 +44,7 @@ class DataIngestion:
         try:
             logging.info("Entered the split_data_as_train_and_test method of DataIngestion class")
             train_set, test_set = train_test_split(df,
-                                                   train_size=self.data_ingestion_config.train_test_split_ratio)
+                                                   train_size=self.data_ingestion_config.train_test_split_ratio, random_state=42)
             logging.info("Train test split complete")
 
             # creating directory to store the train and test set

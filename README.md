@@ -8,7 +8,7 @@ It utilises **FastAPI** for serving the model, **Docker** for containerisation a
 - [Project Overview](#project-overview)
 - [Data](#data)
 - [Installation](#installation)
-- [Tools and Technologies Used](#technologies-used)
+- [Tools and Technologies Used](#tools-and-technologies-used)
 - [Approach](#approach)
 
 

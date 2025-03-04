@@ -61,8 +61,9 @@ To run this project locally, you will need to have Python installed. Additionall
 
 You can install these dependencies by running:
 
-```bash
+--bash
 pip install -r requirements.txt
+
 
 ## Tools and Technologies Used
 - Python: The main programming language used.

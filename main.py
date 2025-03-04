@@ -103,7 +103,7 @@ async def predict_single(features:Item):
         prediction = prediction_pipeline.start_prediction_pipeline()
         return Response(f"Output: {prediction.astype(int)}")
     except  Exception as e:
-        logging.error(f"Error occurred in the predict_single function of main.py - {e}")
+        logging.error(f"Error occurred in the predict_single function of main.py - {e} ")
 
 
 

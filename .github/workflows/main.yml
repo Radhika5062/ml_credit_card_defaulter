@@ -89,8 +89,7 @@ jobs:
     
       - name: Stop and remove container if running 
         run: |
-          docker ps -q --filter "name=credit" | grep -q . && docker stop
-          credit && docker rm -fv credit
+          docker ps -q --filter "name=credit" | grep -q . && docker stop credit && docker rm -fv credit
 
       - name: Run Docker Image to serve users
         run: |

@@ -129,8 +129,12 @@ def main():
 
 
 if __name__ == '__main__':
-    app_run(app, host = APP_HOST, port = APP_PORT)
-
+    try:
+        logging.info("In __main__")
+        app_run(app, host = APP_HOST, port = APP_PORT)
+        logging.info("app run done")
+    except Exception as e:
+        logging.error(f"error occurred in __name__ - {e}")
 
 # if __name__ == "__main__":
 #     # file_name = 'data.xls'
